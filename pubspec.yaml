@@ -26,6 +26,7 @@ dependencies:
   flutter_hooks: ^0.20.5
 
   flutter_native_splash: ^2.4.4
+  smooth_page_indicator: ^1.2.0+3
 
 dev_dependencies:
   flutter_test:
@@ -40,9 +41,13 @@ flutter:
     - assets/fonts/
     - assets/icons/
     - assets/images/
+    - assets\images\on_boarding_images\sammy-line-delivery.gif
+    - assets\images\on_boarding_images\sammy-line-no-connection.gif
+    - assets\images\on_boarding_images\sammy-line-searching.gif
+    - assets\images\on_boarding_images\sammy-line-shopping.gif
     - assets/logos/
-    - assets/logos/t-store-splash-logo-black.png
-    - assets/logos/t-store-splash-logo-white.png
+    - assets\logos\t-store-splash-logo-black.png
+    - assets\logos\t-store-splash-logo-white.png
 
   # LOCAL FONTS
   fonts:
