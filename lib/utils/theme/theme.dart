@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:flutter_ecommerce_app/utils/theme/custom_themes/text_theme.dart';
 
@@ -17,6 +18,7 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    disabledColor: TColors.grey,
     brightness: Brightness.light,
     primaryColor: Colors.blue,
     textTheme: TTExtheme.lightTextTheme,
@@ -32,11 +34,12 @@ class TAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
+    disabledColor: TColors.grey,
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
     textTheme: TTExtheme.darkTextTheme,
     chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: const Color(0xff272727),
     appBarTheme: TAppBarTheme.darkAppBarTheme,
     checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,

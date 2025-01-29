@@ -10,7 +10,15 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      
+      home: const Scaffold(
+        
+        body: Center(
+          child: Text(
+            'Awesome! 🎊 Project Structure is set up and running. \n Happy T Coding 🎊',
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ),
     );
   }
 }

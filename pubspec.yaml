@@ -41,6 +41,8 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/logos/
+    - assets/logos/t-store-splash-logo-black.png
+    - assets/logos/t-store-splash-logo-white.png
 
   # LOCAL FONTS
   fonts:
