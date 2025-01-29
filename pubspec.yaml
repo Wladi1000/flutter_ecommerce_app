@@ -25,6 +25,7 @@ dependencies:
   #Hooks
   flutter_hooks: ^0.20.5
 
+  flutter_native_splash: ^2.4.4
 
 dev_dependencies:
   flutter_test:
