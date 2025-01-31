@@ -41,7 +41,9 @@ flutter:
   assets:
     - assets/fonts/
     - assets/icons/
+    - assets/icons/categories/
     - assets/images/
+    - assets/images/animations/
     - assets/images/on_boarding_images/sammy-line-delivery.gif
     - assets/images/on_boarding_images/sammy-line-no-connection.gif
     - assets/images/on_boarding_images/sammy-line-searching.gif
