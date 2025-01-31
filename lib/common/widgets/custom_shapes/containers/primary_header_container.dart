@@ -21,6 +21,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
           height: 400,
           child: Stack(
             children: [
+              child,
               Positioned(
                   top: -150,
                   right: -250,
