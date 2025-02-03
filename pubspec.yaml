@@ -17,9 +17,11 @@ dependencies:
   url_launcher: ^6.3.1
 
   # Old Program
-  image_picker: ^1.1.2
-  image_cropper: ^8.0.2
+  asp: ^2.0.3
   go_router: ^13.0.0
+  image_cropper: ^8.0.2
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.3
   
 
   # Icons
