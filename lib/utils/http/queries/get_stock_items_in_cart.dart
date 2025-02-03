@@ -1,5 +1,3 @@
-
-
 import 'package:flutter_ecommerce_app/models/stock_item.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 

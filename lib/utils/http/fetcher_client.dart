@@ -4,7 +4,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:fquery/fquery.dart';
 // import 'package:guayanaclient/config/connection.dart';
 
-final _apiOptions = BaseOptions(
+final apiOptions = BaseOptions(
   baseUrl: Api.baseUrl,
   connectTimeout: Api.connectionTimeout,
   receiveTimeout: Api.receiveTimeout,
