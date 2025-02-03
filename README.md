@@ -506,7 +506,7 @@ class CustomWidget extends StatelessWidget {
     );
   }
 }
-
+```
 ## Utils
 
 ### TLoggerHelper
