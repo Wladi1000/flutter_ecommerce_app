@@ -1,7 +1,5 @@
 # flutter_ecommerce_app
 
-Hola
-
 Guaply e-commerce.
 
 Project structure divided by scope
