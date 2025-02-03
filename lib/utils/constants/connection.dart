@@ -1,7 +1,7 @@
-import 'package:flutter_ecommerce_app/utils/constants/connection.dart';
 import 'package:fquery/fquery.dart';
 
-class APIConstants {
+class Api {
+  // static const String url = 'https://server.guapli.com/api/';
   static const String url = 'https://apidev.guemart.com/';
 
   static const String version = '';
