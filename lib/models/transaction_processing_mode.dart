@@ -1,0 +1,8 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum TransactionProcessingMode {
+  INTERNAL,
+  PAYMENT_PROCESSOR,
+  TRANSFER,
+  FOREIGN_CASH,
+  CASH
+}

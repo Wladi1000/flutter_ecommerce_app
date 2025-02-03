@@ -1,0 +1,2 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum RoleInGroup { OWNER, ADMIN, MEMBER }

@@ -1,0 +1,10 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum PackageStatus {
+  PACKING,
+  PACKED,
+  PICKED,
+  DELIVERED,
+  MERGED,
+  DELIVERY_ISSUES,
+  CANCELLED
+}

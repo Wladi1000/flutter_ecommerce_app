@@ -1,0 +1,10 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum OrderItemStatus {
+  UNPAID,
+  PENDING,
+  PACKED,
+  SHIPPING,
+  DELIVERED,
+  CANCELLED,
+  RETURNED
+}

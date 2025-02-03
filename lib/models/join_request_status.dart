@@ -1,0 +1,2 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum JoinRequestStatus { PENDING, APPROVED, REJECTED }

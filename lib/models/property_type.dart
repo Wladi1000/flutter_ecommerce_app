@@ -1,0 +1,12 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum PropertyType {
+  STRING,
+  NUMBER,
+  DATE,
+  TIME,
+  DATETIME,
+  SELECT,
+  MULTISELECT,
+  CHECKBOX,
+  RADIO
+}

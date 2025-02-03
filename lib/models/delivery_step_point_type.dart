@@ -1,0 +1,2 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum DeliveryStepPointType { MEETING_POINT, STORE, DELIVERY_ADDRESS }

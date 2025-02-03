@@ -1,0 +1,13 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum OptionType {
+  BOOLEAN,
+  STRING,
+  NUMBER,
+  DATE,
+  TIME,
+  DATETIME,
+  SELECT,
+  MULTISELECT,
+  CHECKBOX,
+  RADIO
+}

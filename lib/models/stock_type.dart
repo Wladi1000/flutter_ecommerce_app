@@ -1,0 +1,2 @@
+//***  AUTO-GENERATED FILE - DO NOT MODIFY ***//
+enum StockType { IN_STOCK, UPCOMING, ON_DEMAND }
