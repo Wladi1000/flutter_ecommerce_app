@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
+import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TCartCounterIcon extends StatelessWidget {
   const TCartCounterIcon({
-    super.key, required this.onPressed, required this.iconColor,
+    super.key, required this.onPressed, this.iconColor,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
+    final darkMode = THelperFunctions.isDarkMode(context);
     return Stack(
       children: [
         IconButton(
@@ -23,7 +25,7 @@ class TCartCounterIcon extends StatelessWidget {
               width: 18,
               height: 18,
               decoration: BoxDecoration(
-                color: TColors.black,
+                color: darkMode? TColors.light : TColors.black,
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
@@ -33,8 +35,10 @@ class TCartCounterIcon extends StatelessWidget {
                       .textTheme
                       .labelLarge!
                       .apply(
-                          color: TColors.white,
-                          fontSizeFactor: .8),
+                          color: darkMode? TColors.textPrimary : TColors.textWhite,
+                          fontSizeFactor: .8,
+                          fontWeightDelta: 4
+                        ),
                 ),
               ),
             ))
