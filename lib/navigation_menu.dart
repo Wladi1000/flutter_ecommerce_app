@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/home/home.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/store/store.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/wishlist/wishlist.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -39,7 +40,7 @@ class NavigationController{
   final screens = [
     const HomeScreen(),
     const StorePage(),
-    Container(color: Colors.orange,),
+    const FavoriteScreen(),
     Container(color: Colors.cyan,),
   ];
 

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar.dart/appbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar.dart/tabbar.dart';
 import 'package:flutter_ecommerce_app/common/widgets/brands/brand_card.dart';
-import 'package:flutter_ecommerce_app/common/widgets/brands/brand_show_case.dart';
 import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:flutter_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
@@ -77,14 +76,8 @@ class StorePage extends StatelessWidget{
             ),
           ];
         }, 
-          body: TabBarView(
-            children: [
-              CategoryTab(),
-              CategoryTab(),
-              CategoryTab(),
-              CategoryTab(),
-              CategoryTab(),
-            ],
+          body: const TabBarView(
+            children: [CategoryTab(),CategoryTab(),CategoryTab(),CategoryTab(),CategoryTab(),],
           )
         ),
       ),
