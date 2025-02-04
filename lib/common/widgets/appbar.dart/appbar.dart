@@ -9,7 +9,7 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
       {super.key,
       this.appBarHeight = TSizes.appBarHeight,
       this.title,
-      this.showBackArrow = true,
+      this.showBackArrow = false,
       this.leadingIcon,
       this.actions,
       this.leadingOnPressed});
