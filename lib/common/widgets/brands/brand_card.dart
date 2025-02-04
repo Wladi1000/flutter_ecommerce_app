@@ -18,7 +18,7 @@ class TBrandCard extends StatelessWidget {
   const TBrandCard({
     super.key,
     required this.brand,
-    required this.showBorder,
+    this.showBorder = false,
     this.isNetworkImage = false,
     this.onTap,
   });
