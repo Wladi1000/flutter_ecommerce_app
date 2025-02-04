@@ -2,7 +2,6 @@
 
 import 'model_base.dart';
 import 'deliverer_level.dart';
-import 'deliverer.dart';
 import 'system.dart';
 import 'attachment.dart';
 import 'deliverer_session.dart';

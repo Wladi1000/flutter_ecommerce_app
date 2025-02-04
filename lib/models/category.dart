@@ -2,7 +2,6 @@
 
 import 'model_base.dart';
 import 'attachment.dart';
-import 'category.dart';
 import 'system.dart';
 import 'product.dart';
 import 'coupon_category.dart';

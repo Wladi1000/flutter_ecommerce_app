@@ -2,7 +2,6 @@
 
 import 'model_base.dart';
 import 'product.dart';
-import 'presentation.dart';
 import 'presentation_type.dart';
 import 'presentation_property_variation.dart';
 import 'presentation_media.dart';

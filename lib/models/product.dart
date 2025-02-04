@@ -12,7 +12,6 @@ import 'presentation.dart';
 import 'product_media.dart';
 import 'coupon_product.dart';
 import 'supplier_product.dart';
-import 'product.dart';
 
 class Product implements ToJson, IdString {
   @override

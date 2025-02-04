@@ -4,7 +4,6 @@ import 'model_base.dart';
 import 'gender.dart';
 import 'client_level.dart';
 import 'client_address.dart';
-import 'client.dart';
 import 'system.dart';
 import 'attachment.dart';
 import 'privilege.dart';

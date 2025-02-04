@@ -3,7 +3,6 @@
 import 'model_base.dart';
 import 'user.dart';
 import 'package_status.dart';
-import 'package.dart';
 import 'order_client.dart';
 import 'delivery_step.dart';
 import 'order_item.dart';

@@ -3,7 +3,6 @@
 import 'model_base.dart';
 import 'taxonomy.dart';
 import 'attachment.dart';
-import 'taxonomy_term.dart';
 import 'product.dart';
 import 'coupon_term.dart';
 
