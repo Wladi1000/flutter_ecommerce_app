@@ -58,6 +58,7 @@ flutter:
     - assets/images/
     - assets/images/animations/
     - assets/images/banners/
+    - assets/images/content/
     - assets/images/on_boarding_images/
     - assets/images/on_boarding_images/sammy-line-delivery.gif
     - assets/images/on_boarding_images/sammy-line-no-connection.gif
