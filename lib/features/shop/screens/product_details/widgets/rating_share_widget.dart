@@ -20,7 +20,7 @@ class TRatingAndShare extends StatelessWidget {
             Text.rich(
               TextSpan(
                 children: [
-                  TextSpan(text: '5.0', style: Theme.of(context).textTheme.bodyLarge),
+                  TextSpan(text: '5.0 ', style: Theme.of(context).textTheme.bodyLarge),
                   const TextSpan(text: '(199)'),
                 ]
               ),
