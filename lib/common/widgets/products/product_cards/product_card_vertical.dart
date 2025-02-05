@@ -6,6 +6,7 @@ import 'package:flutter_ecommerce_app/common/widgets/images/rounded_image.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/brand_title_with_verified_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_price_text.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/product_title_text.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/product_details/product_detail.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
@@ -19,7 +20,12 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const ProductDetail()),
+        );
+      },
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
