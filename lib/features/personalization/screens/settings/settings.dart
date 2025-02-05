@@ -4,6 +4,7 @@ import 'package:flutter_ecommerce_app/common/widgets/custom_shapes/containers/pr
 import 'package:flutter_ecommerce_app/common/widgets/list_tiles/settings_manu_tile.dart';
 import 'package:flutter_ecommerce_app/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
+import 'package:flutter_ecommerce_app/features/personalization/screens/profile/profile.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
@@ -25,7 +26,7 @@ class SettingsScreen extends StatelessWidget{
                   TAppBar(title: Text('Account', style: Theme.of(context).textTheme.headlineMedium!.apply(color: TColors.white),),),
 
                   // User profile Card
-                  const TUserProfileTile(),
+                  TUserProfileTile(ontapIcon: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfileScreen()),);},),
                   const SizedBox(height: TSizes.spaceBtwSections,),
                 ],
               )
