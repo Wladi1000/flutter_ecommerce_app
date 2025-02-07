@@ -42,6 +42,7 @@ dependencies:
 
   flutter_native_splash: ^2.4.4
   smooth_page_indicator: ^1.2.0+3
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +68,7 @@ flutter:
     - assets/images/on_boarding_images/sammy-line-searching.gif
     - assets/images/on_boarding_images/sammy-line-shopping.gif
     - assets/images/products/
+    - assets/images/reviews/
     - assets/logos/
     - assets/logos/t-store-splash-logo-black.png
     - assets/logos/t-store-splash-logo-white.png

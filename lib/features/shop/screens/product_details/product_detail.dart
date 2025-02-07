@@ -5,6 +5,7 @@ import 'package:flutter_ecommerce_app/features/shop/screens/product_details/widg
 import 'package:flutter_ecommerce_app/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/product_details/widgets/rating_share_widget.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
@@ -64,12 +65,20 @@ Consequat Lorem amet duis nostrud cillum ipsum nostrud occaecat veniam consectet
                   //Reviews
                   const Divider(),
                   const SizedBox(height: TSizes.spaceBtwItems,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const TSectionHeading(title: 'Reviews (199)', showActionButton: false,),
-                      IconButton(onPressed: (){}, icon: const Icon(Iconsax.arrow_right_3),),
-                    ],
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const ProductReviewsScreen()),
+                      );
+                    },
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        TSectionHeading(title: 'Reviews (199)', showActionButton: false,),
+                        Icon(Iconsax.arrow_right_3),
+                      ],
+                    ),
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections,),
                 ],
