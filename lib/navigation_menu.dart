@@ -23,7 +23,7 @@ class NavigationMenu extends HookWidget {
         selectedIndex: controller.currentPageIndex.value,
         onDestinationSelected: (index) => controller.currentPageIndex.value = index,
         backgroundColor: darkMode? TColors.black : Colors.white,
-        indicatorColor: darkMode? TColors.white.withOpacity(.1) : TColors.black.withOpacity(.1),
+        indicatorColor: darkMode? TColors.white.withAlpha((.1 * 255).toInt()) : TColors.black.withAlpha((.1 * 255).toInt()),
         destinations: const [
           NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
           NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),

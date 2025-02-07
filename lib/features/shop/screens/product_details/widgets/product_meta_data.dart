@@ -25,7 +25,7 @@ class TProdcutMetaData extends StatelessWidget{
             // Sale tag
             TRoundedContainer(
               radius: TSizes.sm,
-              backgroundColor: TColors.secondaryColor.withOpacity(.8),
+              backgroundColor: TColors.secondaryColor.withAlpha((.8 * 255).toInt()),
               padding: const EdgeInsets.symmetric(horizontal: TSizes.md, vertical: TSizes.xs),
               child: Text('25%', style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black),),
             ),
