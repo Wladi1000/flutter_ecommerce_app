@@ -1,5 +1,5 @@
+import 'package:flutter_ecommerce_app/common/models/group.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
-import 'package:flutter_ecommerce_app/models/group.dart';
 
 // https://apidev.guemart.com/groups/create
 ResponseSingle createGroup(

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_ecommerce_app/models/client.dart';
+import 'package:flutter_ecommerce_app/common/models/client.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/client_token.dart';
 import 'package:flutter_ecommerce_app/utils/local_storage/models/atoms.dart';
 import 'package:shared_preferences/shared_preferences.dart';

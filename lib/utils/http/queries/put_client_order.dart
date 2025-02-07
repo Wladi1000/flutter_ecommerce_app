@@ -1,5 +1,5 @@
 // https://apidev.guemart.com/group-orders/put-client-order
-import 'package:flutter_ecommerce_app/models/order_partial.dart';
+import 'package:flutter_ecommerce_app/common/models/order_partial.dart';
 import 'package:flutter_ecommerce_app/utils/helpers/product_with_quantity.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 

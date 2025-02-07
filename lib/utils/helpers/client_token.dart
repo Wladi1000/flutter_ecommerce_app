@@ -1,4 +1,4 @@
-import 'package:flutter_ecommerce_app/models/client.dart';
+import 'package:flutter_ecommerce_app/common/models/client.dart';
 
 class ClientToken {
   String token;

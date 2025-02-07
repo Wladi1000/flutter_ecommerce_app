@@ -1,4 +1,4 @@
-import 'package:flutter_ecommerce_app/models/group_member.dart';
+import 'package:flutter_ecommerce_app/common/models/group_member.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 
 ResponseList<GroupMember> getGroupsMembers({

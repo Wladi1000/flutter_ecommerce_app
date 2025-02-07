@@ -1,5 +1,5 @@
 // Clase para debuugear la cantidad de productos que se añaden al carrito
-import 'package:flutter_ecommerce_app/models/models_library.dart';
+import 'package:flutter_ecommerce_app/common/models/stock_item.dart';
 
 class ProductWithQuantity {
   final StockItem? stockItem;

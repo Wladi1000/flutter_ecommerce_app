@@ -1,4 +1,4 @@
-import 'package:flutter_ecommerce_app/models/category.dart';
+import 'package:flutter_ecommerce_app/common/models/category.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 
 ResponseList<Category> getCategories({

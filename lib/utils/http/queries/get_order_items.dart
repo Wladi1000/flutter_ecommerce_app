@@ -1,4 +1,4 @@
-import 'package:flutter_ecommerce_app/models/order.dart';
+import 'package:flutter_ecommerce_app/common/models/order.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 
 ResponseSingle<Order> getOrderItems({

@@ -1,4 +1,4 @@
-import 'package:flutter_ecommerce_app/models/client_address.dart';
+import 'package:flutter_ecommerce_app/common/models/client_address.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 
 ResponseList<ClientAddress> getClientAddresses({

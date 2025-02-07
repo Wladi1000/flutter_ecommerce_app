@@ -1,4 +1,4 @@
-import 'package:flutter_ecommerce_app/models/sales_event.dart';
+import 'package:flutter_ecommerce_app/common/models/sales_event.dart';
 import 'package:flutter_ecommerce_app/utils/http/fetcher_client.dart';
 
 ResponseList<SalesEvent> getSalesEvents() async {
