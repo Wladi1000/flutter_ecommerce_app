@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/common/widgets/appbar.dart/appbar.dart';
-import 'package:flutter_ecommerce_app/common/widgets/products/cart/add_remove_button.dart';
-import 'package:flutter_ecommerce_app/common/widgets/products/cart/cart_item.dart';
-import 'package:flutter_ecommerce_app/common/widgets/texts/product_price_text.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/cart/widgets/cart_items.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/checkout/checkout.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 
 class CartScreen extends StatelessWidget {
-  const CartScreen({super.key});
+  const CartScreen({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,38 +16,20 @@ class CartScreen extends StatelessWidget {
         showBackArrow: true,
         title: Text('Cart', style: Theme.of(context).textTheme.headlineSmall,),
       ),
+      body: const Padding(
+        padding: EdgeInsets.all(TSizes.defaultSpace),
+        child: TCartItems(),
+      ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(TSizes.defaultSpace),
-        child: ElevatedButton(onPressed: (){}, child: const Text('Checkout \$256.41')),
+        child: ElevatedButton(onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CheckoutScreen()),
+          );
+        }, child: const Text('Checkout \$256.41')),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(TSizes.defaultSpace),
-        child: ListView.separated(
-          shrinkWrap: true,
-          itemCount: 10,
-          separatorBuilder: (context, index) => const SizedBox(height: TSizes.spaceBtwSections,),
-          itemBuilder: (_,__) => const Column(
-            children: [
-              TCartItem(),
-              SizedBox(height: TSizes.spaceBtwItems),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Row(
-                    children: [
-                      SizedBox(width: 70),
-                      TProductQuantityWithAddRemove(),
-                    ],
-                  ),
-                  // Add Remove buttons
-                  TProductPriceText(price: '256.41')
-                ],
-              )
-            ],
-          ),
-          
-      ),
-            ));
+    );
   }
 }
 
