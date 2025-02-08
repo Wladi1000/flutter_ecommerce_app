@@ -7,7 +7,7 @@ import 'package:flutter_ecommerce_app/features/shop/screens/cart/widgets/cart_it
 import 'package:flutter_ecommerce_app/features/shop/screens/checkout/widgets/billing_address_section.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/checkout/widgets/billing_amount_section.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/checkout/widgets/billing_payment_section.dart';
-import 'package:flutter_ecommerce_app/features/shop/screens/home/home.dart';
+import 'package:flutter_ecommerce_app/navigation_menu.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
@@ -74,7 +74,7 @@ class CheckoutScreen extends StatelessWidget{
               image: TImages.successfulPaymentIcon,
               title: 'Payment Success!',
               subTitle: 'Your item will be shipped soon!',
-              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen())),
+              onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationMenu())),
             )),
           );
         }, child: const Text('Paid \$256.41')),
