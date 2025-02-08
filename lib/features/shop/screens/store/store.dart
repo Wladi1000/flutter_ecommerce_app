@@ -7,6 +7,7 @@ import 'package:flutter_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/shop/models/brand.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/cart/cart.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/image_strings.dart';
@@ -28,7 +29,12 @@ class StorePage extends StatelessWidget{
           appBarHeight: TDeviceUtility.getAppBarHeight(context),
           title: Text('Store', style: Theme.of(context).textTheme.headlineMedium,),
           actions: [
-            TCartCounterIcon(onPressed: (){})
+            TCartCounterIcon(onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CartScreen()),
+              );
+            })
           ],
         ),
         body: NestedScrollView(headerSliverBuilder: (_, innerBoxIsScrolled) {
