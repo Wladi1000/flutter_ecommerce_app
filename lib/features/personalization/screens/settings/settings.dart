@@ -6,6 +6,7 @@ import 'package:flutter_ecommerce_app/common/widgets/list_tiles/user_profile_til
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/personalization/screens/address/address.dart';
 import 'package:flutter_ecommerce_app/features/personalization/screens/profile/profile.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/order/order.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
@@ -54,7 +55,7 @@ class SettingsScreen extends StatelessWidget{
                     },
                   ),
                   const TSettignsMenuTile(icon: Iconsax.shopping_cart, title: 'My cart', subtitle: 'Add, remove products and move to checkout'),
-                  const TSettignsMenuTile(icon: Iconsax.bag_tick, title: 'My Orders', subtitle: 'In-progress and Completed Orders'),
+                  TSettignsMenuTile(icon: Iconsax.bag_tick, title: 'My Orders', subtitle: 'In-progress and Completed Orders', onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderScreen()),),),
                   const TSettignsMenuTile(icon: Iconsax.bank, title: 'My Account', subtitle: 'Withdraw balance to registered bank account'),
                   const TSettignsMenuTile(icon: Iconsax.discount_shape, title: 'My Coupons', subtitle: 'List of all the discounted coupons'),
                   const TSettignsMenuTile(icon: Iconsax.notification, title: 'Notifications', subtitle: 'Set any kind of notification message'),
