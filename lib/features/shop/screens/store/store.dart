@@ -7,6 +7,7 @@ import 'package:flutter_ecommerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:flutter_ecommerce_app/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:flutter_ecommerce_app/common/widgets/texts/section_heading.dart';
 import 'package:flutter_ecommerce_app/features/shop/models/brand.dart';
+import 'package:flutter_ecommerce_app/features/shop/screens/brand/all_brands.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/cart/cart.dart';
 import 'package:flutter_ecommerce_app/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:flutter_ecommerce_app/utils/constants/colors.dart';
@@ -57,7 +58,12 @@ class StorePage extends StatelessWidget{
                     const SizedBox(height: TSizes.spaceBtwSections,),
       
                     // Featured brands
-                    TSectionHeading(title: 'Featured Brands', onPressed: () {},),
+                    TSectionHeading(title: 'Featured Brands', onPressed: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const AllBrandsScreen()),
+                    );
+                    },),
                     const SizedBox(height: TSizes.spaceBtwItems / 1.5,),
       
                     TGridLayout(itemCount: 4, mainAxisExtent: 80, itemBuilder: (_, index) {
