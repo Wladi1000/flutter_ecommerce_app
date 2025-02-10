@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_app/features/authentication/screens/login/login.dart';
 
 class OnBoardingController{
   // Singleton instance
@@ -32,7 +33,10 @@ class OnBoardingController{
     int nextPageIndex = currentPageIndex.value + 1;
     if (nextPageIndex >= 3) {
       // Navigate to login page
-      // Navigator.pushReplacementNamed(context, '/login');
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
+      );
     } else {
       pageController.animateToPage(
         nextPageIndex,

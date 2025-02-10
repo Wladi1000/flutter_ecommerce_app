@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_app/navigation_menu.dart';
 import 'package:flutter_ecommerce_app/utils/constants/sizes.dart';
 import 'package:flutter_ecommerce_app/utils/constants/text_strings.dart';
 import 'package:iconsax/iconsax.dart';
@@ -47,7 +48,13 @@ class TLoginForm extends StatelessWidget {
           const SizedBox(height: TSizes.spaceBtwSections,),
     
           // Sing In Button
-          SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(TText.signIn)),),
+          SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const NavigationMenu()),
+            );
+          }, 
+          child: const Text(TText.signIn)),),
           const SizedBox(height: TSizes.spaceBtwItems,),
     
           // Create Account Button

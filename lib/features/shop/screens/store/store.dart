@@ -60,9 +60,9 @@ class StorePage extends StatelessWidget{
                     // Featured brands
                     TSectionHeading(title: 'Featured Brands', onPressed: () {
                       Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const AllBrandsScreen()),
-                    );
+                        context,
+                        MaterialPageRoute(builder: (context) => const AllBrandsScreen()),
+                      );
                     },),
                     const SizedBox(height: TSizes.spaceBtwItems / 1.5,),
       
