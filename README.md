@@ -1,6 +1,6 @@
 # flutter_ecommerce_app
 
-Guaply e-commerce.
+Template e-commerce.
 
 Project structure divided by scope
 
